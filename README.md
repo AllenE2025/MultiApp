@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🧩 Multiple Activities App (Next.js + Supabase)
 
-## Getting Started
+This project was built as part of a technical assessment to demonstrate skills in Next.js, Supabase, and TypeScript.
+It includes multiple mini applications, each focusing on different Supabase and Next.js concepts such as authentication, CRUD operations, and file storage.
 
-First, run the development server:
+🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend: Next.js (App Router, TypeScript, Tailwind CSS)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Backend / Database: Supabase (Auth, Database, Storage)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Deployment: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Version Control: Git & GitHub
 
-## Learn More
+🔐 Authentication
 
-To learn more about Next.js, take a look at the following resources:
+Uses Supabase Auth (Email + Password)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Only authenticated users can access activity pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Unauthenticated users are redirected to login
 
-## Deploy on Vercel
+Users can log out and delete their own account
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📘 Activity Details
+Activity 1: To-Do List App
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A simple Supabase CRUD application.
+
+Each user sees only their own tasks
+
+Supports Create, Read, Update, Delete
+
+Data persists even after browser restart
+
+Activity 2: Google Drive "Lite"
+
+Users can upload, edit, delete, and view photos
+
+Photos stored in Supabase Storage
+
+Search and sort by name or upload date
+
+Activity 3: Food Review App
+
+Users can CRUD food items and reviews (parent-child relationship)
+
+Reviews are linked to specific food items
+
+Sorting by food name or upload date
+
+Activity 4: Pokémon Review App
+
+Fetch Pokémon details from PokéAPI
+
+Users can search Pokémon by name
+
+Each Pokémon has a list of reviews stored in Supabase
+
+Supports sorting by Pokémon name or upload date
+
+Activity 5: Markdown Notes App
+
+Users can create, edit, delete, and view notes in Markdown
+
+Includes raw input mode and preview mode
+
+Notes sorted by title or creation date
+
+🌐 Deployment
+
+The app is deployed to Vercel
+
+Automatic builds on push to main branch
+
+Environment variables configured in Vercel dashboard
+
+🧠 Concepts Demonstrated
+
+Next.js App Router structure (app/ directory)
+
+Supabase Authentication
+
+Supabase CRUD Operations
+
+Supabase Storage
+
+Row-Level Security (RLS)
+
+Client-side API fetching (PokéAPI)
+
+Markdown rendering
+
+UI state management with React Hooks
+
+Protected routes and user-based data isolation
+
+✨ Author
+
+David Allen Evangelista
+Full-stack developer skilled in Laravel, Vue.js, Node.js, and Next.js.
+Eager to learn and build scalable, user-focused web applications.

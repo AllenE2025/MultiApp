@@ -1,4 +1,4 @@
-🧩 Multiple Activities App (Next.js + Supabase)
+🧩 MultiApp (Next.js + Supabase)
 
 This project was built as part of a technical assessment to demonstrate skills in Next.js, Supabase, and TypeScript.
 It includes multiple mini applications, each focusing on different Supabase and Next.js concepts such as authentication, CRUD operations, and file storage.
